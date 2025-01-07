@@ -1,7 +1,8 @@
 import React from "react";
 import "./home.css";
 import image1 from "../assets/Image1.jpg";
-import themeIcon from "../assets/sun.svg";
+import sun from "../assets/sun.svg";
+import moon from "../assets/moon.svg";
 import leetcode from "../assets/leetcode.svg";
 import github from "../assets/github-light.svg";
 import gfg from "../assets/gfg.svg";
@@ -10,6 +11,7 @@ import { useTheme } from "../Theme/ThemeContext";
 
 function Home() {
   const {theme,toggleTheme}=useTheme();
+  const themeIcon = theme ==="light" ?sun:moon;
   return (
     <section id="home">
       <div>
