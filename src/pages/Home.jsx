@@ -4,7 +4,8 @@ import image1 from "../assets/Image1.jpg";
 import sun from "../assets/sun.svg";
 import moon from "../assets/moon.svg";
 import leetcode from "../assets/leetcode.svg";
-import github from "../assets/github-light.svg";
+import githublight from "../assets/github-light.svg";
+import githubdark from "../assets/github-dark.svg";
 import gfg from "../assets/gfg.svg";
 import CV from "../assets/Resume.pdf";
 import { useTheme } from "../Theme/ThemeContext";
@@ -12,6 +13,7 @@ import { useTheme } from "../Theme/ThemeContext";
 function Home() {
   const {theme,toggleTheme}=useTheme();
   const themeIcon = theme ==="light" ?sun:moon;
+  const githubIcon = theme ==="light"?githublight:githubdark;
   return (
     <section id="home">
       <div>
@@ -26,7 +28,7 @@ function Home() {
             <img src={leetcode} alt="" srcset="" className="icon" />
           </a>
           <a href="https://github.com/siddharth6164" target="_blank">
-            <img src={github} alt="" srcset="" className="icon" />
+            <img src={githubIcon} alt="" srcset="" className="icon" />
           </a>
           <a
             href="https://www.geeksforgeeks.org/user/siddhu33singh1/"
