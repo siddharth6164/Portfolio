@@ -15,10 +15,10 @@ function Home() {
   const themeIcon = theme ==="light" ?sun:moon;
   const githubIcon = theme ==="light"?githublight:githubdark;
   return (
-    <section id="home">
-      <div>
+    <section className="home">
+      <div className="colormodecontainer">
         <img className="image1" src={image1} alt="siddharth singh"/>
-        <img className="" src={themeIcon} alt="siddharth singh" onClick={toggleTheme}/>
+        <img className="colormode" src={themeIcon} alt="siddharth singh" onClick={toggleTheme}/>
       </div>
       <div className="info">
         <h1>Siddharth Singh</h1>
@@ -37,7 +37,7 @@ function Home() {
             <img src={gfg} alt="" srcset="" className="icon" />
           </a>
         </span>
-        <p>With a passion for Developing modern React web apps for commercial businesses.</p>
+        <p className="description">With a passion for Developing modern React web apps for commercial businesses.</p>
         <a href={CV} download>
           <button className="resune_btn">Resume</button>
         </a>
