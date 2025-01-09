@@ -9,3 +9,9 @@
     background-color: var(--project-card-bg);
     border-radius: 20px;
 }
+.projects a{
+    width: fit-content;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+}
