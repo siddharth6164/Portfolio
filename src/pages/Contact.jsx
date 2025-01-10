@@ -40,7 +40,7 @@ function Contact() {
             required
           />
         </div>
-        <input type="button" value="Submit" className="submitbtn" />
+        <input type="submit" value="Submit" className="submitbtn" />
       </form>
     </section>
   );

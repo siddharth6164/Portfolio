@@ -4,6 +4,7 @@ import Projects from '../../pages/Projects'
 import Home from '../../pages/Home'
 import Skills from '../../pages/Skills'
 import Contact from '../../pages/Contact'
+import Footer from '../../pages/Footer'
 
 function Layout() {
   return (
@@ -13,6 +14,7 @@ function Layout() {
         <Projects/>
         <Skills/>
         <Contact/>
+        <Footer/>
     </>
   )
 }
