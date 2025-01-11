@@ -36,4 +36,15 @@ hr{
     margin: 30px auto;
 }
 
- 
+@media(width>=800px){
+    .skilllist{
+        max-width: fit-content;
+        gap: 30px;
+    }
+    .skills p{
+        font-size: 20px;
+    }
+    .skills hr{
+        width: 300px;
+    }
+}
