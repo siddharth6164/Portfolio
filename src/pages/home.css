@@ -76,3 +76,19 @@ button:hover{
     gap: 20px;
     /* align-items: center; */
 }
+
+@media(width>=800px){
+    .home{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+}
+
+@media(width>=1400px){
+    .home{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+}
