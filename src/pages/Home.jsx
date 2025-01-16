@@ -15,7 +15,7 @@ function Home() {
   const themeIcon = theme ==="light" ?sun:moon;
   const githubIcon = theme ==="light"?githublight:githubdark;
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="colormodecontainer">
         <img className="image1" src={image1} alt="siddharth singh"/>
         <img className="colormode" src={themeIcon} alt="siddharth singh" onClick={toggleTheme}/>

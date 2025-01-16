@@ -6,7 +6,7 @@ import Projectcards from './Projectcards'
 
 function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
         <h1 className='sectionTitle'>Projects</h1>
         <div className='projectsContainer'>
             <Projectcards src={tourimg} link="https://github.com/siddharth6164/tour_management" name="Tour" desc="Traveling App"/>
