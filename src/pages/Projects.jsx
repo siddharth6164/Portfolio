@@ -1,17 +1,23 @@
 import React from 'react'
-import "./projects.css"
-import tourimg from '../assets/tour_img.png'
-import teaching from '../assets/teaching.png';
-import Projectcards from './Projectcards'
-
+import "./project.css"
+import tourimg from "../assets/tour_img.png"
+import techimg from "../assets/teaching.png"
 function Projects() {
   return (
-    <section className="projects" id="projects">
-        <h1 className='sectionTitle'>Projects</h1>
-        <div className='projectsContainer'>
-            <Projectcards src={tourimg} link="https://github.com/siddharth6164/tour_management" name="Tour" desc="Traveling App"/>
-            <Projectcards src={teaching} link="https://github.com/siddharth6164/Basic_Topic_React" name="Reach" desc="Reactook  "/>
+    <section id='project' className='project-container'>
+      <h5>Project</h5>
+      <div className='project-content'>
+        <div className='project-card'>
+          <img src={tourimg} alt="" />
+          <div className='vertical'></div>
+          <p>Tour Management</p>
         </div>
+        <div className='project-card'>
+          <img src={techimg} alt="" />
+          <div className='vertical'></div>
+          <p>React Hook Concepts</p>
+        </div>
+      </div>
     </section>
   )
 }

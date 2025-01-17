@@ -1,36 +1,35 @@
-import React from "react";
-import './skills.css'
-import checkmarkdark from "../assets/checkmark-dark.svg";
-import checkmarklight from "../assets/checkmark-light.svg";
-import SkillList from "./SkillList";
-import { useTheme } from "../Theme/ThemeContext";
+import React,{useState} from "react";
+import "./skill.css";
+import SkillCard from "./Skills/SkillCard";
+import { SKILLS } from "../utils/data";
+import SkillInfoCard from "./Skills/SkillInfoCard";
 function Skills() {
-  const {theme,toggleTheme}=useTheme();
-  const checkmark=theme==="light"?checkmarklight:checkmarkdark;
+  const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
+  const handleSelectSkill = (data) => {
+    setSelectedSkill(data);
+  };
   return (
-    <section className="skills">
-      <h1>Skills</h1>
-      <div className="skilllist">
-        <SkillList src={checkmark} skill="HTML" />
-        <SkillList src={checkmark} skill="CSS" />
-        <SkillList src={checkmark} skill="JavaScript" />
-        <SkillList src={checkmark} skill="ReactJS" />
+    <section id="skill" className="skills-container">
+      <h5>Technical Proficiency</h5>
+      <div className="skills-content">
+        <div className="skills">
+          {SKILLS.map((item) => (
+            <SkillCard
+              key={item.title}
+              iconUrl={item.icon}
+              title={item.title}
+              isActive={selectedSkill.title === item.title}
+              onClick={()=>{handleSelectSkill(item)}}
+            />
+          ))}
+        </div>
+        <div className="skills-info">
+          <SkillInfoCard
+            heading={selectedSkill.title}
+            skills={selectedSkill.skills}
+          />
+        </div>
       </div>
-      <hr />
-      <div className="skilllist">
-        <SkillList src={checkmark} skill="Java" />
-        <SkillList src={checkmark} skill="Java8" />
-        <SkillList src={checkmark} skill="Spring Boot" />
-        <SkillList src={checkmark} skill="APIs" />
-        <SkillList src={checkmark} skill="OOPS" />
-      </div>
-      <hr />
-      <div className="skilllist">
-      <SkillList src={checkmark} skill="MySQL" />
-      <SkillList src={checkmark} skill="Git" />
-      <SkillList src={checkmark} skill="Postman" />
-      <SkillList src={checkmark} skill="Intellij IDEA" />
-      </div>      
     </section>
   );
 }
