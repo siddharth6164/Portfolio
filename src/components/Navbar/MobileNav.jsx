@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import "./mobilenav.css";
+import resume from "../../assets/SIDDHARTH_SINGH.pdf"
 function MobileNav({ isOpen, toggleMenu }) {
   return (
     <>
@@ -32,21 +33,15 @@ function MobileNav({ isOpen, toggleMenu }) {
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="contect">
-                <a className="menu-item">Contect Me</a>
+              <ScrollLink to="contact">
+                <a className="menu-item">Contact Me</a>
               </ScrollLink>
             </li>
-            <button
-              className="contect-btn"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = { resume };
-                link.download = "Siddharht_Singh.pdf";
-                link.click();
-              }}
-            >
+            <a href={resume} download>
+            <button className="contect-btn">
               Hire Me
             </button>
+              </a>
           </ul>
         </div>
       </div>

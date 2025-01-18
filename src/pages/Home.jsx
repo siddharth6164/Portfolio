@@ -1,7 +1,7 @@
 import React from 'react'
 import Skills from './Skills.jsx'
 import Projects from './Projects'
-import Contect from './Contect'
+import Contact from './Contact'
 import "./home.css"
 import image from '../assets/img1.png'
 import reactIcon from '../assets/react.png'
@@ -44,7 +44,7 @@ function Home() {
     <Skills/>
     <WorkExperience/>
     <Projects/>
-    <Contect/>
+    <Contact/>
     </div>
     </>
   )

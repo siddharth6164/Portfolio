@@ -36,18 +36,15 @@ function Navbar() {
               </ScrollLink>
             </li>
             <li>
-            <ScrollLink to="contect">
-              <a className="menu-item">Contect Me</a>
+            <ScrollLink to="contact">
+              <a className="menu-item">Contact Me</a>
               </ScrollLink>
             </li>
-            <button className="contect-btn" onClick={()=>{
-              const link = document.createElement('a');
-              link.href = {resume};
-              link.download = "Siddharht_Singh.pdf";
-              link.click();
-            }}>
-              Hire Me
-            </button>
+            <a href={resume} download>
+              <button className="contect-btn">
+                Hire Me
+              </button>
+            </a>
           </ul>
           <button class="menu-btn" onClick={toggleMenu}>
             <span class="material-symbols-outlined">

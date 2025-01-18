@@ -7,9 +7,9 @@ import linkedin from '../assets/linkedin.svg'
 import ContactForm from './ContactMe/ContactForm'
 
 
-function Contect() {
+function Contact() {
   return (
-    <section className='contect-container' id="contect">
+    <section className='contect-container' id="contact">
       <h5>Contact Me</h5>
       <div className='contact-content'>
         <div style={{flex:1}}>
@@ -25,4 +25,4 @@ function Contect() {
   )
 }
 
-export default Contect
+export default Contact
