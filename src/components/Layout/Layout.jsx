@@ -1,13 +1,13 @@
 import React from 'react'
 import Footer from '../Footer/Footer'
-import Routers from '../../router/Routers'
 import Navbar from '../Navbar/Navbar'
+import Home from '../../pages/Home'
 
 function Layout() {
   return (
     <>
     <Navbar/>
-    <Routers/>
+    <Home/>
     <Footer/>
     </>
   )

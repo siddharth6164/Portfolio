@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link as ScrollLink } from "react-scroll";
 import resume from "../../assets/SIDDHARTH_SINGH.pdf"
-import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
