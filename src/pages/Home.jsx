@@ -16,10 +16,9 @@ function Home() {
     <div className='container'>
     <section id='home' className='home-container'>
       <div className='home-content'>
-        <h2>Building Digital Experienves That Inspire</h2>
+        <h2>Building Digital Experiences That Inspire</h2>
         <p>
-          Passionater Frontend Developer | Transforming Ideas into Seamless and Seamless
-          Visually Stunning Web Solutions
+        Passionate Frontend Developer | Crafting Seamless and Visually Captivating Web Experiences That Bring Ideas to Life
         </p>
       </div>
       <div className='home-img'>

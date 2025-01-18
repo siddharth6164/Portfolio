@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./mobilenav.css"
+import { Link as ScrollLink } from "react-scroll";
+import "./mobilenav.css";
 function MobileNav({ isOpen, toggleMenu }) {
-    
   return (
     <>
       <div
@@ -12,21 +12,39 @@ function MobileNav({ isOpen, toggleMenu }) {
           <h1 className="logo">Siddharth</h1>
           <ul>
             <li>
-              <a className="menu-item">Home</a>
+              <ScrollLink to="home">
+                <a className="menu-item">Home</a>
+              </ScrollLink>
             </li>
             <li>
-              <a className="menu-item">Skill</a>
+              <ScrollLink to="skill">
+                <a className="menu-item">Skill</a>
+              </ScrollLink>
             </li>
             <li>
-              <a className="menu-item">Project</a>
+              <ScrollLink to="project">
+                <a className="menu-item">Project</a>
+              </ScrollLink>
             </li>
             <li>
-              <a className="menu-item">Work Experience</a>
+              <ScrollLink to="workexp">
+                <a className="menu-item">Work Experience</a>
+              </ScrollLink>
             </li>
             <li>
-              <a className="menu-item">Contect Me</a>
+              <ScrollLink to="contect">
+                <a className="menu-item">Contect Me</a>
+              </ScrollLink>
             </li>
-            <button className="contect-btn" onClick={() => {}}>
+            <button
+              className="contect-btn"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = { resume };
+                link.download = "Siddharht_Singh.pdf";
+                link.click();
+              }}
+            >
               Hire Me
             </button>
           </ul>

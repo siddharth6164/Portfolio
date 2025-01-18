@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link as ScrollLink } from "react-scroll";
+import resume from "../../assets/SIDDHARTH_SINGH.pdf"
 import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 function Navbar() {
@@ -40,7 +41,12 @@ function Navbar() {
               <a className="menu-item">Contect Me</a>
               </ScrollLink>
             </li>
-            <button className="contect-btn" onClick={()=>{}}>
+            <button className="contect-btn" onClick={()=>{
+              const link = document.createElement('a');
+              link.href = {resume};
+              link.download = "Siddharht_Singh.pdf";
+              link.click();
+            }}>
               Hire Me
             </button>
           </ul>

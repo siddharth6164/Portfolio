@@ -13,16 +13,26 @@
     font-weight: 600;
     margin-bottom: 3.5rem;
 }
-.project-card{
+.project-container a{
     border-radius: 0.65rem;
     border: 2px solid #6751b9;
+    background: rgba(22,17,47,0.398); 
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.project-container a:hover{
+    border: 2px solid #977ef1;
+    background: rgba(34, 20, 106, 0.398); 
+
+    transform: translateY(-0.5rem);
+}
+.project-card{
     padding: 2.5rem;
     text-align: center;
-    background: rgba(22,17,47,0.398);
     display: flex;
     align-items: center;
     position: relative;
-    width: 35%;
 }
 .vertical{
     height: 11rem;
@@ -54,6 +64,7 @@
         height: 7rem;
     }
     .project-card{
+        width: 10rem;
         height: 15rem;
     }
     .vertical{

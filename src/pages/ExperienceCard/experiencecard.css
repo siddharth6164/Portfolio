@@ -1,5 +1,5 @@
 .work-experience-card{
-    /* height: 17rem; */
+    height: 17rem;
     background: #130f2a;
     border-radius: 0.65rem;
     border:1.5px solid #6751b9;
@@ -41,15 +41,25 @@
     left: -1.3rem;
     top: 0.35rem;
 }
-
+@media (max-width: 1024px){
+    .work-experience-card{
+        height: 20rem;
+    }
+}
 @media(max-width:768px){
     .work-experience-card{
         margin: 0;
+        height: 15rem;
     }
     .work-experience-card h6{
         font-size: 0.95rem;
     }
     .work-experience-card ul li{
         font-size: 0.75rem;
+    }
+}
+@media(max-width:710px){
+    .work-experience-card{
+        height: 20rem;
     }
 }
